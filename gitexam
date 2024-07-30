@@ -10,31 +10,28 @@ git branch feature-branch
 git checkout feature-branch
 git add .
 git commit -m "message"
-git push origin feature-branch:main
+git push
 
+git checkout main
+git merge feature-branch
 git add .
 git commit -m "message"
+git push(twice)
 git stash
 git checkout feature-branch
 git stash apply
 
 EXPERIMENT 3
-git clone repolink
 git branch -v
-git checkout -b feature-branch
+git fetch origin
 git branch -v
-git rebase origin 
-git add .
-git commit -m "message"
-git rebase origin
+git checkout feature-branch
+git rebase main
 
 EXPERIMENT 4
-git add .
-git commit -m "message"
-git push
-git log  —oneline 
-git tag  v1.0 (commit id) 
-git tag
+git log
+git tag -a v1.0 -m "V1.0"
+git show v1.0
 git push origin v1.0
 
 EXPERIMENT 5
