@@ -37,12 +37,20 @@ git push origin v1.0
 EXPERIMENT 5
 git log --oneline 
 git status 
+git branch 2.0
+git log --oneline
 git checkout feature-branch 
+git add .
+git commit -m "hello"
+git push
+git log --oneline
+git checkout 2.0
 git cherry-pick id
 
 EXPERIMENT 6
 git log --oneline 
 git show (commit id)
 //open new terminal //
-git log --author=" " --after="(//yesterday date//) "    --before="(//tmr date//)"
+cd exam
+git log --author="suhas-sudeep" --after="(//yesterday date//) "    --before="(//tmr date//)"
 git log -n 5
