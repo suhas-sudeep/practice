@@ -1,7 +1,6 @@
 EXPERIMENT 1
 git clone repolink 
-cd reponame 
-code . 
+cd reponame  
 gitadd .
 git commit -m "message" 
 git push
